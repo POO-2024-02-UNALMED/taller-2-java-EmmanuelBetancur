@@ -5,7 +5,7 @@ public class Auto {
     //atributos
     String modelo;
     int precio;
-    Asiento asientos[];
+    Asiento[] asientos;
     String marca;
     Motor motor;
     int registro;
@@ -16,8 +16,12 @@ public class Auto {
 
     int cantidadAsientos(Auto auto){
 
-        int nasientos; 
-        nasientos = size(this.asientos);
+        int nasientos = 0; 
+        for(int i = 0; i < asientos.length; i++) {
+            if(asientos[i] != null){
+                nasientos++;
+            }
+        }
         return nasientos; 
 
     }
@@ -27,13 +31,22 @@ public class Auto {
 
     String verificarIntegridad(Auto auto){
 
-        if (this.registro != (motor.registro && asientos.registro)) {
+    if (this.registro == motor.registro) {
 
+        for(int x = 0; x < this.asientos.length; x++) {
+
+            if (asientos[x] != null){
+
+            if (this.registro != asientos[x].registro) {
+                
             return "Las piezas no son originales";
 
-        } else {
-            return "Auto original";
+        } else {return "Auto original";}
+        
+        } else {return "Las piezas no son originales";}
+
         }
+    } else {return "Las piezas no son originales";}
 
     }
 
