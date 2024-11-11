@@ -5,7 +5,7 @@ public class Auto {
     //atributos
     String modelo;
     int precio;
-    Asiento asientos[];
+    Asiento[] asientos;
     String marca;
     Motor motor;
     int registro;
