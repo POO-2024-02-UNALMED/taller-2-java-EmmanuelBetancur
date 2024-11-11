@@ -17,7 +17,7 @@ public class Auto {
     int cantidadAsientos(){
 
         int nasientos = 0; 
-        for(int i = 0; i < asientos.length; i++) {
+        for(int i = 0; i < asientos.length; i = i+1) {
             if(asientos[i] != null){
                 nasientos++;
             }
@@ -33,7 +33,7 @@ public class Auto {
 
     if (this.registro == motor.registro) {
 
-        for(int i = 0; i < this.asientos.length; i++) {
+        for(int i = 0; i < this.asientos.length; i = i+1) {
 
             if (asientos[i] != null){
 
