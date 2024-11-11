@@ -16,8 +16,12 @@ public class Auto {
 
     int cantidadAsientos(Auto auto){
 
-        int nasientos; 
-        nasientos = size(this.asientos);
+        int nasientos = 0; 
+        for(int i = 0; i < asientos.length; i++) {
+            if(asientos[i] != null){
+                nasientos++;
+            }
+        }
         return nasientos; 
 
     }
