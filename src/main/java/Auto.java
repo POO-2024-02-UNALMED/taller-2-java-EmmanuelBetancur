@@ -14,7 +14,7 @@ public class Auto {
     //El metodo cantidadAsientos recibira un objeto de tipo auto y devolvera el numero de
     //objetos de tipo asiento que hagan parte de el array asientos
 
-    int cantidadAsientos(Auto auto){
+    int cantidadAsientos(){
 
         int nasientos = 0; 
         for(int i = 0; i < asientos.length; i++) {
@@ -29,7 +29,7 @@ public class Auto {
     //El metodo verificarIntegridad comparara el numero de registro de los asientos, del motor y
     //del auto para comprobar si son o no originales.
 
-    String verificarIntegridad(Auto auto){
+    String verificarIntegridad(){
 
     if (this.registro == motor.registro) {
 
@@ -44,7 +44,7 @@ public class Auto {
             } else {return "Las piezas son originales";}
 
         } return "Auto original";
-        
+
     } else {return "Las piezas no son originales";}
 
     }
